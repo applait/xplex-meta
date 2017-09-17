@@ -1,29 +1,25 @@
 package contract
 
-type Rig struct {
-	Register struct {
-		Hostname string `json:"hostname"`
-		JWT      string `json:"jwt"`
-	}
-
-	StreamInit struct {
-		Name string `json:"name"`
-	}
-
-	StreamDrop struct {
-		Name string `json:"name"`
-	}
+type RigRegister struct {
+	Hostname string `json:"hostname"`
+	JWT      string `json:"jwt"`
 }
 
-type Agent struct {
-	Register struct {
-		Hostname string `json:"hostname"`
-		Secret   string `json:"secret"`
-	}
+type RigStreamInit struct {
+	Name string `json:"name"`
+}
 
-	StreamInit struct {
-		Name  string `json:"name"`
-		Token string `json:"token"`
-		JWT   string `json:"jwt"`
-	}
+type RigStreamDrop struct {
+	Name string `json:"name"`
+}
+
+type AgentRegister struct {
+	Hostname string `json:"hostname"`
+	Secret   string `json:"secret"`
+}
+
+type AgentStreamInit struct {
+	Name  string `json:"name"`
+	Token string `json:"token"`
+	JWT   string `json:"jwt"`
 }
