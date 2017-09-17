@@ -1,0 +1,9 @@
+*~
+\#*\#
+.\#*
+
+# Ignore /bin
+/bin/
+
+# Ignore /config.json
+/config.json
